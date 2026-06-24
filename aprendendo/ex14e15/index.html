@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia || Conversor de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#secao-horas">Horário</a></li>
+                <li><a href="#secao-idade">Conversor de Idade</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="home">
+                <h1>Sobre o Projeto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iure accusamus earum. Eligendi nihil sunt tenetur quae quas cumque autem deleniti, consequatur voluptates, commodi vel dicta, maxime non tempora quibusdam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis natus dignissimos voluptate praesentium, repellat odio et repudiandae suscipit, quaerat magni voluptatum perspiciatis! Tenetur labore assumenda, eligendi asperiores optio delectus rerum?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptatem! Ex, provident labore. Asperiores veniam est laudantium? Maiores esse aliquam vero sapiente aliquid distinctio ducimus laborum corporis, molestias nisi excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, earum in similique nesciunt, voluptatibus eligendi id molestiae magni blanditiis aut dolorum, placeat amet porro inventore iure sapiente accusantium sed quaerat?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, cumque at numquam neque fugit cupiditate ex voluptate et minus consequatur sint. Quisquam saepe laborum fugiat accusantium dolorem cum porro dolores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad vero, dolores dolorum cumque totam eius consectetur esse, quasi fugiat aspernatur deleniti adipisci, asperiores cupiditate tenetur? Esse perferendis expedita magni voluptatibus!</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <div id="secao-horas">
+                <h2>Que horas você nasceu?</h2>
+                <input type="number" name="horario" id="horario">
+                <input type="button" value="Verificar Horario" onclick="VerificarHorario()">
+            </div>
+
+            <div id="res-horario">
+
+            </div>
+        </section>
+
+        <section class="card">
+            <div id="secao-idade">
+                <h2>Que ano você nasceu?</h2>
+                <input type="number" name="idade" id="idade">
+                <input type="button" value="Verificar Idade" onclick="VerificarIdade()">
+            </div>
+
+            <div id="res-idade">
+
+            </div>
+        </section>
+    </main>
+    <footer id="contatos">
+        <p>&copy; 2026 - Desenvolvido por Pietro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

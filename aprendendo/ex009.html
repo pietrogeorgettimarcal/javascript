@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando ex009 em forma de site</title>
+</head>
+<body>
+    <h1>Digite seu país de origem</h1>
+    <input type="text" name="país" id="país">
+    <input type="button" value="Enviar" onclick="Verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function Verificar() {
+            var p = document.getElementById('país').value
+            var res = document.getElementById('res')
+
+            res.innerHTML = `<p>Seu páis de origem é ${p.toUpperCase()}</p>`
+
+            if (p.toUpperCase() == 'BRASIL') {
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
