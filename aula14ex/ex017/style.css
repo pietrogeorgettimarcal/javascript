@@ -52,6 +52,10 @@ section {
     transform: translateY(-5px);
 }
 
+#seltab {
+    width: 100%;
+}
+
 footer {
     font-style: italic;
     color: white;
