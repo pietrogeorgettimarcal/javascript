@@ -4,21 +4,20 @@ let res = document.getElementById('res')
 let valor = []
 
 function adicionar() {
-    let n = Number(num.value)
+    n = Number(num.value)
 
-    if(n >= 1 && n <= 100 && !valor.includes(n)) {
+    if(n>=1 && n<=100 && !valor.includes(n)) {
+        valor.push(n)
 
-    valor.push(n)
+        let item = document.createElement('option')
+        valor.push(item)
+        item.text = `O valor ${n} foi adicionado`
+        list.appendChild(item)
 
-    let item = document.createElement('option')
-    item.text = `O valor ${n} foi adicionado.`
-    list.appendChild(item)
-
-    res.innerHTML = ''
+        res.innerHTML = ''
     } else {
         window.alert('Número inválido ou já existente na lista.')
     }
-
     num.value = ''
     num.focus()
 }
